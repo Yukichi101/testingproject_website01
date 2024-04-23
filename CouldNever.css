@@ -1,0 +1,117 @@
+* {
+	box-sizing: border-boxl;
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+}
+
+header {
+	animation-name: slideInTop;
+	animation-duration: 2s;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px;
+}
+
+header h1 {
+	font-family: methanerse;
+	color: #FFFFFF;
+	padding-left: 20px;
+	margin-right: 500px;
+}
+
+.nav_links{
+	list-style: none;
+	padding-left: 200px;
+}
+
+.nav_links li{
+	display: inline-block;
+	padding: 0px 15px;
+}
+
+.nav_links li a{
+	color: #FFFFFF;
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+}
+
+.nav_links li a:hover {
+	color: #AB20FD;
+}
+
+.eta {
+	padding-right: 50px;
+}
+
+button {
+	padding: 9px;
+	background-color: #FFFFFF;
+	border:none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover{
+	background-color: #AB20FD;
+}
+
+.mainpage_container{
+	position: relative;
+}
+
+.title{
+	color: #FFFFFF;
+	font-size: 80px;
+	background-color: transparent;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation-name:slideInRight;
+	animation-duration: 3s;
+	animation-delay: 0s;
+}
+
+.mainpage_img{
+	opacity: 0.7;
+	animation-name: slideInLeft;
+	animation-duration: 3s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+	animation-direction: normal;
+	animation-fill-mode: none;
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-500px);
+	}
+	
+	to{
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from{
+		top: 45%;
+		transform: translateX(1000px);
+	}
+	
+	to{
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes slideInTop {
+	from{
+		transform: translateY(-200px);
+	}
+	
+	to{
+		transform: translateY(0);
+	}
+}
